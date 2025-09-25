@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "stdio.h": "c"
+    },
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+    "C_Cpp.errorSquiggles": "disabled"
+}

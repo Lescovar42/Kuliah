@@ -1,0 +1,224 @@
+{
+  "main": {
+    "id": "c869915ca6ed2b2d",
+    "type": "split",
+    "children": [
+      {
+        "id": "f557b37f03d8fc0f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "efbe23c2d914bedc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Kuliah/StrukDit/Struktur Diskrit.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0f8aad31fe742867",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Kuliah/StrukDit/Permutasi dan Kombinasi.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b960dc9d34c31abf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Kuliah/DasPro/Dasar Pemrograman.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "db301d953da3c8d8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Kuliah/DasPro/Tipe Bentukan.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "924c12df8b0b6f7d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Kuliah/DasPro/Notes.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "cb6d3fd73f84ea65",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Kuliah/DasPro/Koleksi Objek.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f7127604a0390074",
+    "type": "split",
+    "children": [
+      {
+        "id": "b6dae603193f084c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "451cac6d94a07b74",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "2ed033595b200839",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "4c129a4fff2bb0f5",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "44c2f269b8154848",
+    "type": "split",
+    "children": [
+      {
+        "id": "591b944d48dd7304",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "068df9e4e8ca2ea1",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Kuliah/DasPro/Koleksi Objek.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "8cb7f3c29e9407b2",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Kuliah/DasPro/Koleksi Objek.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "1437329cf0f859dc",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "d41ca743daad2e58",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Kuliah/DasPro/Koleksi Objek.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "cb6d3fd73f84ea65",
+  "lastOpenFiles": [
+    "Kuliah/DasPro/Notes.md",
+    "Kuliah/DasPro/Koleksi Objek.md",
+    "Kuliah/DasPro/Tipe Bentukan.md",
+    "Kuliah/DasPro/Dasar Pemrograman.md",
+    "Kuliah/StrukDit/Permutasi dan Kombinasi.md",
+    "Kuliah/StrukDit/Struktur Diskrit.md",
+    "Kuliah/StrukDit/Pertemuan 5.md",
+    "Kuliah/DasPro",
+    "Kuliah/StrukDit",
+    "Welcome.md",
+    "Kuliah"
+  ]
+}
