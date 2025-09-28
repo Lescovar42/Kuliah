@@ -40,7 +40,6 @@ int main()
     Tstack history, forward;
     createStack(&history);
     createStack(&forward);
-
     int kode;
     char ch, tmp;
 
