@@ -1,0 +1,82 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1B0AEB66-218A-0C06-4587-84FD920A94CA" name="KEANGGOTAAN">
+<createdBy>AQI</createdBy>
+<createdTime>2025-10-01 14:59:20 UTC</createdTime>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<engineerTo>
+<item key="929452EA-4FE9-7205-F914-C8285FA66F16" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_Asosiasi" id="1A4721AD-30E8-6AD2-DEBD-AFA4FAF6B3C2">
+<createdBy>AQI</createdBy>
+<createdTime>2025-10-01 15:00:18 UTC</createdTime>
+<generatorID>C2B9A2BD-530E-F0A2-93FD-02B634CD6508</generatorID>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<engineerTo>
+<item key="929452EA-4FE9-7205-F914-C8285FA66F16" value="true"/>
+</engineerTo>
+<referedAttribute>8D96D323-9D39-C587-A4CD-3EDF55C5F95D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_UMKM" id="CDDC1084-071F-6F09-C680-0926DE7456CF">
+<createdBy>AQI</createdBy>
+<createdTime>2025-10-01 15:00:26 UTC</createdTime>
+<generatorID>400DB54F-FF05-3BB0-5E5F-0DB3914F12E5</generatorID>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<engineerTo>
+<item key="929452EA-4FE9-7205-F914-C8285FA66F16" value="true"/>
+</engineerTo>
+<referedAttribute>5E5F6623-587C-6CFA-FC2D-495109169CE4</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Tanggal_Pendaftaran" id="669660E7-CF6C-1FA0-D6F8-8AA4138CAE6B">
+<createdBy>AQI</createdBy>
+<createdTime>2025-10-01 15:01:24 UTC</createdTime>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<engineerTo>
+<item key="929452EA-4FE9-7205-F914-C8285FA66F16" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Status_Pendaftaran" id="19D5F110-BD63-8F8D-84D5-BAAD637DF0F9">
+<createdBy>AQI</createdBy>
+<createdTime>2025-10-01 15:01:37 UTC</createdTime>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<engineerTo>
+<item key="929452EA-4FE9-7205-F914-C8285FA66F16" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="CA739B98-7074-1874-7595-017F415ED529" name="KEANGGOTAAN PK">
+<createdBy>AQI</createdBy>
+<createdTime>2025-10-01 15:00:18 UTC</createdTime>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<engineerTo>
+<item key="929452EA-4FE9-7205-F914-C8285FA66F16" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1A4721AD-30E8-6AD2-DEBD-AFA4FAF6B3C2</attributeRef>
+<attributeRef>CDDC1084-071F-6F09-C680-0926DE7456CF</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

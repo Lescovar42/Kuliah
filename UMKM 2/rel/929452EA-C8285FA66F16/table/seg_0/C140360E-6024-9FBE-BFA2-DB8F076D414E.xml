@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C140360E-6024-9FBE-BFA2-DB8F076D414E" name="PENDUDUK_DESA">
+<createdBy>AQI</createdBy>
+<createdTime>2025-09-29 07:27:20 UTC</createdTime>
+<generatorID>FE02187B-C4FC-A14C-3591-1E1D1BB03201</generatorID>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="NIK" id="D6E148CE-F79D-37BA-2998-ECF49D9B5C95">
+<createdBy>AQI</createdBy>
+<createdTime>2025-09-29 07:27:20 UTC</createdTime>
+<generatorID>67010B84-A507-9842-97DA-29DFF62A7B2A</generatorID>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>16</dataTypeSize>
+<ownDataTypeParameters>16,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nama" id="C5F7152F-6768-B656-1658-03ECEAC8C85D">
+<createdBy>AQI</createdBy>
+<createdTime>2025-09-29 07:27:20 UTC</createdTime>
+<generatorID>BB0D4212-2F23-8873-D6F3-76D7F57B9BA5</generatorID>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Alamat" id="5913FD14-5E06-B92E-6323-F6050DE9D228">
+<createdBy>AQI</createdBy>
+<createdTime>2025-09-29 07:27:20 UTC</createdTime>
+<generatorID>3B92BAFB-6521-FFD5-F3A5-4909008D8E40</generatorID>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Tanggal_Lahir" id="8E05E42B-C27A-4902-DD28-AC7226A174D5">
+<createdBy>AQI</createdBy>
+<createdTime>2025-09-29 07:27:20 UTC</createdTime>
+<generatorID>99C8D397-761C-28BD-EE59-E4DE8A8F096F</generatorID>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Jenis_Kelamin" id="8D3374B7-B049-3F05-F41A-59C994903F98">
+<createdBy>AQI</createdBy>
+<createdTime>2025-09-29 07:27:20 UTC</createdTime>
+<generatorID>D2B5A147-FE40-EF14-A74F-F996B1009008</generatorID>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="No_HP" id="B50CA5DF-F7C3-D691-E3E2-382810F5ABC7">
+<createdBy>AQI</createdBy>
+<createdTime>2025-09-29 07:27:20 UTC</createdTime>
+<generatorID>9B31D97C-448A-16EF-5B1E-2065F86915D3</generatorID>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>13</dataTypeSize>
+<ownDataTypeParameters>13,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FDE78EC8-B5C2-346B-2924-E4EB3C45BE8C" name="PENDUDUK_PK">
+<createdBy>AQI</createdBy>
+<createdTime>2025-09-29 07:27:20 UTC</createdTime>
+<generatorID>1C770E7F-3E73-3B1C-C463-978404EE55E2</generatorID>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D6E148CE-F79D-37BA-2998-ECF49D9B5C95"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

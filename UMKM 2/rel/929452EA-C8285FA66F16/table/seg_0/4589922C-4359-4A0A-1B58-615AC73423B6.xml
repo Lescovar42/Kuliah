@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4589922C-4359-4A0A-1B58-615AC73423B6" name="ASOSIASI">
+<createdBy>AQI</createdBy>
+<createdTime>2025-09-29 07:27:20 UTC</createdTime>
+<generatorID>E5753096-12D0-6621-010C-AAD86081144A</generatorID>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Asosiasi" id="0776B66B-A07C-B2AE-52B0-A34CEC1E1170">
+<createdBy>AQI</createdBy>
+<createdTime>2025-09-29 07:27:20 UTC</createdTime>
+<generatorID>8D96D323-9D39-C587-A4CD-3EDF55C5F95D</generatorID>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nama_Asosiasi" id="F5233DB1-431D-D8C1-70CA-C47A277E7BEA">
+<createdBy>AQI</createdBy>
+<createdTime>2025-09-29 07:27:20 UTC</createdTime>
+<generatorID>2A40548C-E7D9-2AA6-6787-60BE676F3869</generatorID>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Bidang_Usaha" id="C7656148-8C0E-305D-80BB-27A24544213C">
+<createdBy>AQI</createdBy>
+<createdTime>2025-09-29 07:27:20 UTC</createdTime>
+<generatorID>3F8DC2C9-E403-9F58-83F4-3A395F727BA9</generatorID>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Tahun" id="D15399E6-049C-F539-25F0-72A0573264A9">
+<createdBy>AQI</createdBy>
+<createdTime>2025-09-29 07:27:20 UTC</createdTime>
+<generatorID>4CC752FA-ED49-D355-B790-3AA4FA957637</generatorID>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6DD64CEB-176A-84A7-8E6D-9C449C3112FA" name="ASOSIASI_PK">
+<createdBy>AQI</createdBy>
+<createdTime>2025-09-29 07:27:20 UTC</createdTime>
+<generatorID>102ACC43-2C8C-D7B8-29DA-8CCD4D9AB3AE</generatorID>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0776B66B-A07C-B2AE-52B0-A34CEC1E1170"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

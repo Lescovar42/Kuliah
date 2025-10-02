@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DE11E513-9575-F127-1B43-E732D2784BA8" name="PROGRAM">
+<createdBy>AQI</createdBy>
+<createdTime>2025-09-17 15:45:14 UTC</createdTime>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<engineerTo>
+<item key="929452EA-4FE9-7205-F914-C8285FA66F16" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_Program" id="567B67EA-636D-BCC3-BB0C-E8B1CD28F372">
+<createdBy>AQI</createdBy>
+<createdTime>2025-09-17 15:45:27 UTC</createdTime>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<engineerTo>
+<item key="929452EA-4FE9-7205-F914-C8285FA66F16" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nama_Program" id="CD82BA70-1350-215E-1C29-CC415B10FC15">
+<createdBy>AQI</createdBy>
+<createdTime>2025-09-17 15:45:56 UTC</createdTime>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<engineerTo>
+<item key="929452EA-4FE9-7205-F914-C8285FA66F16" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Jenis_Program" id="587F388C-96CF-F915-22BF-BAD84C5AE3D3">
+<createdBy>AQI</createdBy>
+<createdTime>2025-09-17 15:46:22 UTC</createdTime>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<engineerTo>
+<item key="929452EA-4FE9-7205-F914-C8285FA66F16" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Tanggal_Dimulai" id="ABC490A9-CED6-4955-2E26-87BD7D2764B5">
+<createdBy>AQI</createdBy>
+<createdTime>2025-09-17 15:48:18 UTC</createdTime>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<engineerTo>
+<item key="929452EA-4FE9-7205-F914-C8285FA66F16" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Tanggal_Selesai" id="E3416810-D827-C592-FCC1-7BB05869EB73">
+<createdBy>AQI</createdBy>
+<createdTime>2025-09-17 15:48:43 UTC</createdTime>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<engineerTo>
+<item key="929452EA-4FE9-7205-F914-C8285FA66F16" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="315C3FEA-BA07-9353-BAA2-625F8BADEB79" name="PROGRAM PK">
+<createdBy>AQI</createdBy>
+<createdTime>2025-09-17 15:45:52 UTC</createdTime>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="929452EA-4FE9-7205-F914-C8285FA66F16" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>567B67EA-636D-BCC3-BB0C-E8B1CD28F372</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

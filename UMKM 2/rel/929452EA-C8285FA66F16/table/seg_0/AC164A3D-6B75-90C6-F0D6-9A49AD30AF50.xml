@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AC164A3D-6B75-90C6-F0D6-9A49AD30AF50" name="Jasa">
+<createdBy>AQI</createdBy>
+<createdTime>2025-09-29 07:27:20 UTC</createdTime>
+<generatorID>522B4849-3F94-FAC6-CB9D-CA397ED4EED0</generatorID>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_UMKM" id="510C7A9F-9284-B927-001B-1F912F79008B">
+<createdBy>AQI</createdBy>
+<createdTime>2025-09-29 07:27:20 UTC</createdTime>
+<generatorID>713227AD-2EF6-4012-1132-AE86F5CEB9C3</generatorID>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F8B5DB04-D085-37BC-9147-19600854F813" referredColumn="083F5D55-584D-D15D-65A9-6805463C2EE0"/>
+</associations>
+</Column>
+<Column name="Jenis_jasa" id="5EFCDF82-7961-8C54-A0A1-A7AC5259A699">
+<createdBy>AQI</createdBy>
+<createdTime>2025-09-29 07:27:20 UTC</createdTime>
+<generatorID>F77FC8C1-547E-748F-404A-945FB289F8FE</generatorID>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_UMKM1" id="EE5ABF83-A614-8BC7-1E46-E9F81443B5B1">
+<createdBy>AQI</createdBy>
+<createdTime>2025-10-01 15:06:56 UTC</createdTime>
+<generatorID>5E5F6623-587C-6CFA-FC2D-495109169CE4</generatorID>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="894903B4-39A6-23E4-EFE6-A0B957498190" referredColumn="B3E849D2-6239-88E1-3A1C-70DBD0617CA3"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="49B19357-9663-3C34-31BF-4439368EF135" name="Jasa_PKv1">
+<createdBy>AQI</createdBy>
+<createdTime>2025-10-01 15:06:56 UTC</createdTime>
+<generatorID>D8153C20-2AE2-3725-0823-06DBE39BAC4B</generatorID>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EE5ABF83-A614-8BC7-1E46-E9F81443B5B1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0F61AD01-13A7-A21F-3042-2906660222AD" name="Jasa_PK">
+<createdBy>AQI</createdBy>
+<createdTime>2025-09-29 07:27:20 UTC</createdTime>
+<generatorID>60FA847D-F02C-7494-E885-7EC95CCD7090</generatorID>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="510C7A9F-9284-B927-001B-1F912F79008B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AE694430-52FC-D310-F24D-AB5069EDDFD8" name="Jasa_UMKM_FK">
+<createdBy>AQI</createdBy>
+<createdTime>2025-09-29 07:27:20 UTC</createdTime>
+<generatorID>BE356A59-473D-95B7-2D3C-6B0F95B925A8</generatorID>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="510C7A9F-9284-B927-001B-1F912F79008B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E99E2F76-5A25-7E14-73D4-5D01C670C347" name="Jasa_UMKMv1_FK">
+<createdBy>AQI</createdBy>
+<createdTime>2025-10-01 15:06:56 UTC</createdTime>
+<generatorID>5D5421BB-AAC0-1369-692A-0187BA3465D2</generatorID>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EE5ABF83-A614-8BC7-1E46-E9F81443B5B1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

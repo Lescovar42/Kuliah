@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="ED943C72-3176-311B-F857-B39165845DD6" containerWithKeyObject="8CAAFF4D-140A-290A-398A-75769FE7E5AA" localFKIndex="48A97455-B4E9-6D86-973B-3999E4FBD81A" name="NOTA_PRODUK_FK">
+<createdBy>AQI</createdBy>
+<createdTime>2025-10-01 15:06:56 UTC</createdTime>
+<generatorID>3B1C1DE8-C68B-3D03-4E36-419971DD68F4</generatorID>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<referredTableLongName>PRODUK</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>55A7C5A3-FB5B-4B85-1DAC-9B37D7CA9047</referredTableID>
+<keyObject>E1F4FC0C-BB00-726A-C51A-293F364C7A99</keyObject>
+<referredKeyID>E1F4FC0C-BB00-726A-C51A-293F364C7A99</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_Produk</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

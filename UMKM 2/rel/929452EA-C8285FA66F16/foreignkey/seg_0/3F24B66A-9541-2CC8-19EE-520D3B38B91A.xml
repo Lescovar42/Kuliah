@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="3F24B66A-9541-2CC8-19EE-520D3B38B91A" containerWithKeyObject="68F87E49-FEA9-BD0A-6546-63F8AC6E2DC9" localFKIndex="8BE45004-CEDE-7406-B30F-F9B7F21D1B36" name="Relation_15_ASOSIASI_FK">
+<createdBy>AQI</createdBy>
+<createdTime>2025-10-01 13:46:40 UTC</createdTime>
+<generatorID>10A1A5D6-7933-8AD4-80FD-6389AFE8E83A</generatorID>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<referredTableLongName>ASOSIASI</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>4589922C-4359-4A0A-1B58-615AC73423B6</referredTableID>
+<keyObject>6DD64CEB-176A-84A7-8E6D-9C449C3112FA</keyObject>
+<referredKeyID>6DD64CEB-176A-84A7-8E6D-9C449C3112FA</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_Asosiasi</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

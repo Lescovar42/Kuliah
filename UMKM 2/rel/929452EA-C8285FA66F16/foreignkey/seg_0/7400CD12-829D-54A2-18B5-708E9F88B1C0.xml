@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="7400CD12-829D-54A2-18B5-708E9F88B1C0" containerWithKeyObject="AA0AE256-2CC8-1DB7-1E21-1FA2A88458F7" localFKIndex="551190AA-DDF2-99D9-F5C8-F7E170060E42" name="PARTISIPASI_PROGRAM_FK">
+<createdBy>AQI</createdBy>
+<createdTime>2025-10-01 15:06:56 UTC</createdTime>
+<generatorID>AE787F84-D8B7-4B37-E8D2-24D2FF2CA34A</generatorID>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<referredTableLongName>PROGRAM</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>2563D056-05FC-665E-0BFA-C54DB9DDFBEF</referredTableID>
+<keyObject>352761C2-3901-2342-12EF-AEADB8DF033B</keyObject>
+<referredKeyID>352761C2-3901-2342-12EF-AEADB8DF033B</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_Program</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

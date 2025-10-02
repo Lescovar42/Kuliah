@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DE6379FB-4EA4-4422-45DB-AC0B6B61AB56" name="KEANGGOTAAN">
+<createdBy>AQI</createdBy>
+<createdTime>2025-10-01 15:06:56 UTC</createdTime>
+<generatorID>1B0AEB66-218A-0C06-4587-84FD920A94CA</generatorID>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ASOSIASI_ID_Asosiasi" id="E864AD26-9D91-64DA-CCD2-4E72D876A04A">
+<createdBy>AQI</createdBy>
+<createdTime>2025-10-01 15:06:56 UTC</createdTime>
+<generatorID>1A4721AD-30E8-6AD2-DEBD-AFA4FAF6B3C2</generatorID>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9EC8B251-E5D6-E1C0-807A-9C067D9B6801" referredColumn="0776B66B-A07C-B2AE-52B0-A34CEC1E1170"/>
+</associations>
+</Column>
+<Column name="UMKMv1_ID_UMKM" id="A81AA72F-8B70-934D-4C1B-1D9E9534E8AE">
+<createdBy>AQI</createdBy>
+<createdTime>2025-10-01 15:06:56 UTC</createdTime>
+<generatorID>CDDC1084-071F-6F09-C680-0926DE7456CF</generatorID>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7F43AB80-EB2D-01A5-2C38-3B85F57077FB" referredColumn="B3E849D2-6239-88E1-3A1C-70DBD0617CA3"/>
+</associations>
+</Column>
+<Column name="Tanggal_Pendaftaran" id="208B2E46-FADD-AC54-17A8-924FEF4A87E1">
+<createdBy>AQI</createdBy>
+<createdTime>2025-10-01 15:06:56 UTC</createdTime>
+<generatorID>669660E7-CF6C-1FA0-D6F8-8AA4138CAE6B</generatorID>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Status_Pendaftaran" id="E6F78833-24A4-3A3D-5615-D2E897005455">
+<createdBy>AQI</createdBy>
+<createdTime>2025-10-01 15:06:56 UTC</createdTime>
+<generatorID>19D5F110-BD63-8F8D-84D5-BAAD637DF0F9</generatorID>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="590EE7C5-8600-0E95-78F2-9CB1B5812768" name="KEANGGOTAAN_PK">
+<createdBy>AQI</createdBy>
+<createdTime>2025-10-01 15:06:56 UTC</createdTime>
+<generatorID>CA739B98-7074-1874-7595-017F415ED529</generatorID>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E864AD26-9D91-64DA-CCD2-4E72D876A04A"/>
+<colUsage columnID="A81AA72F-8B70-934D-4C1B-1D9E9534E8AE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8BEE673D-EEF6-80A8-160D-AB12E43525F9" name="KEANGGOTAAN_ASOSIASI_FK">
+<createdBy>AQI</createdBy>
+<createdTime>2025-10-01 15:06:56 UTC</createdTime>
+<generatorID>C2B9A2BD-530E-F0A2-93FD-02B634CD6508</generatorID>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E864AD26-9D91-64DA-CCD2-4E72D876A04A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FD049D6E-02A6-8BB3-3345-511B5C5041A9" name="KEANGGOTAAN_UMKMv1_FK">
+<createdBy>AQI</createdBy>
+<createdTime>2025-10-01 15:06:56 UTC</createdTime>
+<generatorID>400DB54F-FF05-3BB0-5E5F-0DB3914F12E5</generatorID>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A81AA72F-8B70-934D-4C1B-1D9E9534E8AE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

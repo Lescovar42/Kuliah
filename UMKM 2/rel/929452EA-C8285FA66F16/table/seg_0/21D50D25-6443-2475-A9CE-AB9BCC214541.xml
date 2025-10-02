@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="21D50D25-6443-2475-A9CE-AB9BCC214541" name="Pertanian_Olahan">
+<createdBy>AQI</createdBy>
+<createdTime>2025-09-29 07:27:20 UTC</createdTime>
+<generatorID>27590EDB-2A6B-24DC-6858-449652289D0B</generatorID>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_UMKM" id="B49B8A94-425B-E129-4AA6-B1C7B51DF794">
+<createdBy>AQI</createdBy>
+<createdTime>2025-09-29 07:27:20 UTC</createdTime>
+<generatorID>713227AD-2EF6-4012-1132-AE86F5CEB9C3</generatorID>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7F02C002-5DCD-406B-A91E-FD22DD260F21" referredColumn="083F5D55-584D-D15D-65A9-6805463C2EE0"/>
+</associations>
+</Column>
+<Column name="Produk_Olahan" id="E20BBB97-9FA8-75AA-6A8F-7922AA3F6AD0">
+<createdBy>AQI</createdBy>
+<createdTime>2025-09-29 07:27:20 UTC</createdTime>
+<generatorID>1F0C98B1-C5ED-371D-783F-8858C87847A3</generatorID>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_UMKM1" id="F231B1B5-9FAF-2D54-0C15-547E18257ABC">
+<createdBy>AQI</createdBy>
+<createdTime>2025-10-01 15:06:56 UTC</createdTime>
+<generatorID>5E5F6623-587C-6CFA-FC2D-495109169CE4</generatorID>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="04A78DF2-B415-5C03-B8D3-E1BBF0592FED" referredColumn="B3E849D2-6239-88E1-3A1C-70DBD0617CA3"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="79B4D5EC-2D2F-6FE5-3B6D-D807566F1CFB" name="Pertanian_Olahan_PKv1">
+<createdBy>AQI</createdBy>
+<createdTime>2025-10-01 15:06:56 UTC</createdTime>
+<generatorID>D8153C20-2AE2-3725-0823-06DBE39BAC4B</generatorID>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F231B1B5-9FAF-2D54-0C15-547E18257ABC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3E5F67EB-40CB-11D3-7375-430DFEE85409" name="Pertanian_Olahan_PK">
+<createdBy>AQI</createdBy>
+<createdTime>2025-09-29 07:27:20 UTC</createdTime>
+<generatorID>60FA847D-F02C-7494-E885-7EC95CCD7090</generatorID>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B49B8A94-425B-E129-4AA6-B1C7B51DF794"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0187D7CA-E41C-FEB7-3FF0-00FCE4FD6080" name="Pertanian_Olahan_UMKM_FK">
+<createdBy>AQI</createdBy>
+<createdTime>2025-09-29 07:27:20 UTC</createdTime>
+<generatorID>FF46B71B-86B6-3DA4-066B-80C0DA8201F1</generatorID>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B49B8A94-425B-E129-4AA6-B1C7B51DF794"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="62A26D4D-CA96-EC57-6CBC-785E434AE1C1" name="Pertanian_Olahan_UMKMv1_FK">
+<createdBy>AQI</createdBy>
+<createdTime>2025-10-01 15:06:56 UTC</createdTime>
+<generatorID>7D3BAB9C-704E-4A7F-68EC-B0C5B15361A7</generatorID>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F231B1B5-9FAF-2D54-0C15-547E18257ABC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

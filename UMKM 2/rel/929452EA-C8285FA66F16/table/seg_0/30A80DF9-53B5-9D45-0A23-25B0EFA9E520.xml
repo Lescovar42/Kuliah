@@ -1,0 +1,164 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="30A80DF9-53B5-9D45-0A23-25B0EFA9E520" name="TRANSAKSI">
+<createdBy>AQI</createdBy>
+<createdTime>2025-09-29 07:27:20 UTC</createdTime>
+<generatorID>99C87C84-1853-427D-F8EC-CA361FF45A6E</generatorID>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Transaksi" id="1B144F8B-3881-ED41-15D0-29477F7CBCA8">
+<createdBy>AQI</createdBy>
+<createdTime>2025-09-29 07:27:20 UTC</createdTime>
+<generatorID>8427BBC6-4315-999A-2766-624CF4F57268</generatorID>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Tanggal" id="A3AE0B92-D44D-C425-F660-0260E5866E5E">
+<createdBy>AQI</createdBy>
+<createdTime>2025-09-29 07:27:20 UTC</createdTime>
+<generatorID>89D5358F-B174-1B0F-6857-248CDE909A94</generatorID>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Jumlah_Pembelian" id="92140B14-A4AB-ED14-EB98-9E633C8F8315">
+<createdBy>AQI</createdBy>
+<createdTime>2025-09-29 07:27:20 UTC</createdTime>
+<generatorID>8D1BA6F8-23A7-B3B2-08D2-24B700F5E00D</generatorID>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Total_Harga" id="BE5A3D3A-C638-AE29-CB7B-2A133072708B">
+<createdBy>AQI</createdBy>
+<createdTime>2025-09-29 07:27:20 UTC</createdTime>
+<generatorID>B5EE9537-9F6E-818F-7D52-C01D4E369EB6</generatorID>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Pembeli_ID_Pembeli" id="D242A912-5BDE-682B-F9AD-0EFA28A84D53">
+<createdBy>AQI</createdBy>
+<createdTime>2025-09-29 07:27:20 UTC</createdTime>
+<generatorID>D1BE96B7-CB90-0C82-5762-C5B4A0044903</generatorID>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DB78C283-B0A5-6CBB-DA0A-AF577F562722" referredColumn="326FEE5B-45E8-DB5B-09DE-148563BFF7ED"/>
+</associations>
+</Column>
+<Column name="PENDUDUK_DESA_NIK" id="AAD191CA-ED68-0C28-A282-05B626DA8938">
+<createdBy>AQI</createdBy>
+<createdTime>2025-10-01 13:46:40 UTC</createdTime>
+<generatorID>2DCF0789-F490-C1EC-E707-3F487D49539F</generatorID>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>16</dataTypeSize>
+<ownDataTypeParameters>16,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A4B8CCA6-759F-CE0F-6CD7-BF0DE49EA42B" referredColumn="D6E148CE-F79D-37BA-2998-ECF49D9B5C95"/>
+</associations>
+</Column>
+<Column name="PENDUDUK_LUAR_NIK" id="5C42C1F8-0198-7CEF-3011-B2A599CF8B9C">
+<createdBy>AQI</createdBy>
+<createdTime>2025-10-01 13:46:40 UTC</createdTime>
+<generatorID>212A07BB-91DF-C023-7494-94523CD99299</generatorID>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F5845513-ECE7-C547-DBDE-5415C13A9BF6" referredColumn="326FEE5B-45E8-DB5B-09DE-148563BFF7ED"/>
+</associations>
+</Column>
+<Column name="Metode_Pembayaran" id="7B44F820-1468-8557-14A8-BA01A6CED882">
+<createdBy>AQI</createdBy>
+<createdTime>2025-10-01 15:06:56 UTC</createdTime>
+<generatorID>4794855E-2DA1-1BD6-30C4-B40A39DEA679</generatorID>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="47B4AFA1-A101-0062-D810-39186D883DCD" name="TRANSAKSI_PK">
+<createdBy>AQI</createdBy>
+<createdTime>2025-09-29 07:27:20 UTC</createdTime>
+<generatorID>BADD2D84-8896-41B7-42D8-6024C89C9C20</generatorID>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1B144F8B-3881-ED41-15D0-29477F7CBCA8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E7755E2F-832E-3F80-F75D-77FC637CF613" name="TRANSAKSI_Pembeli_FK">
+<createdBy>AQI</createdBy>
+<createdTime>2025-09-29 07:27:20 UTC</createdTime>
+<generatorID>382595B5-75BB-081C-76BB-FB8DEF619003</generatorID>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D242A912-5BDE-682B-F9AD-0EFA28A84D53"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="67DC4ED8-B98F-F2E5-A585-75B934406537" name="TRANSAKSI_PENDUDUK_DESA_FK">
+<createdBy>AQI</createdBy>
+<createdTime>2025-10-01 13:46:40 UTC</createdTime>
+<generatorID>A26BA6BE-35C2-8254-9F32-4DD3B32FF8BF</generatorID>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AAD191CA-ED68-0C28-A282-05B626DA8938"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C2587B4A-52B3-F2EA-E599-85E4A53912F9" name="TRANSAKSI_PENDUDUK_LUAR_FK">
+<createdBy>AQI</createdBy>
+<createdTime>2025-10-01 13:46:40 UTC</createdTime>
+<generatorID>09A5CFA2-FB66-73D6-17CE-7A28CA98FB4D</generatorID>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5C42C1F8-0198-7CEF-3011-B2A599CF8B9C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

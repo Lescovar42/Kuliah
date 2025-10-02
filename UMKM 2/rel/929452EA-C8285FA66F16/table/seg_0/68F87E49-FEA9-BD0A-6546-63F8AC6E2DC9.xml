@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="68F87E49-FEA9-BD0A-6546-63F8AC6E2DC9" name="Relation_15">
+<createdBy>AQI</createdBy>
+<createdTime>2025-10-01 13:46:40 UTC</createdTime>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="UMKM_ID_UMKM" id="5810D830-A766-000E-F448-4AADB8DFD550">
+<createdBy>AQI</createdBy>
+<createdTime>2025-10-01 13:46:40 UTC</createdTime>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="494AE761-113C-0B06-A64C-B847C0F76F91" referredColumn="083F5D55-584D-D15D-65A9-6805463C2EE0"/>
+</associations>
+</Column>
+<Column name="ASOSIASI_ID_Asosiasi" id="3ED024F8-3A04-35BD-392B-8379A7036546">
+<createdBy>AQI</createdBy>
+<createdTime>2025-10-01 13:46:40 UTC</createdTime>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3F24B66A-9541-2CC8-19EE-520D3B38B91A" referredColumn="0776B66B-A07C-B2AE-52B0-A34CEC1E1170"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3ECA1882-4548-2B9F-957C-5168F7543B64" name="Relation_15_PK">
+<createdBy>AQI</createdBy>
+<createdTime>2025-10-01 13:46:40 UTC</createdTime>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5810D830-A766-000E-F448-4AADB8DFD550"/>
+<colUsage columnID="3ED024F8-3A04-35BD-392B-8379A7036546"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="ECE7257C-4A6E-A629-1D21-1D21ED001FE8" name="Relation_15_UMKM_FK">
+<createdBy>AQI</createdBy>
+<createdTime>2025-10-01 13:46:40 UTC</createdTime>
+<generatorID>10A1A5D6-7933-8AD4-80FD-6389AFE8E83A</generatorID>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5810D830-A766-000E-F448-4AADB8DFD550"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8BE45004-CEDE-7406-B30F-F9B7F21D1B36" name="Relation_15_ASOSIASI_FK">
+<createdBy>AQI</createdBy>
+<createdTime>2025-10-01 13:46:40 UTC</createdTime>
+<generatorID>10A1A5D6-7933-8AD4-80FD-6389AFE8E83A</generatorID>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3ED024F8-3A04-35BD-392B-8379A7036546"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

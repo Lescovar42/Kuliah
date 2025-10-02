@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4F2FEF6F-B9D0-9D56-27E9-81E8952BD13A" name="Relation_12">
+<createdBy>AQI</createdBy>
+<createdTime>2025-09-29 07:27:20 UTC</createdTime>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PROGRAM_ID_Program" id="F442BC45-5E12-68F7-C49B-F36FD52154FC">
+<createdBy>AQI</createdBy>
+<createdTime>2025-09-29 07:27:20 UTC</createdTime>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B7ED8173-431F-CF37-2547-F28B5E367F49" referredColumn="95F2D894-717E-8279-074D-A4548708DFF2"/>
+</associations>
+</Column>
+<Column name="UMKM_ID_UMKM" id="F8C7488B-D663-9514-1490-4D433A7F9CA1">
+<createdBy>AQI</createdBy>
+<createdTime>2025-09-29 07:27:20 UTC</createdTime>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="073B789B-34BA-4174-2580-2AA5947E4A17" referredColumn="083F5D55-584D-D15D-65A9-6805463C2EE0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1AD85B95-2F8F-DBC9-E681-F04CB38EA252" name="Relation_12_PK">
+<createdBy>AQI</createdBy>
+<createdTime>2025-09-29 07:27:20 UTC</createdTime>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F442BC45-5E12-68F7-C49B-F36FD52154FC"/>
+<colUsage columnID="F8C7488B-D663-9514-1490-4D433A7F9CA1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F30D626E-A781-FC4E-9C8B-6F78ECA9EB63" name="Relation_12_PROGRAM_FK">
+<createdBy>AQI</createdBy>
+<createdTime>2025-09-29 07:27:20 UTC</createdTime>
+<generatorID>F9193484-2DAC-25A1-0446-2486452ACA2A</generatorID>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F442BC45-5E12-68F7-C49B-F36FD52154FC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1B0E0C3C-0E27-B648-DCDA-FC98549D4EA3" name="Relation_12_UMKM_FK">
+<createdBy>AQI</createdBy>
+<createdTime>2025-09-29 07:27:20 UTC</createdTime>
+<generatorID>F9193484-2DAC-25A1-0446-2486452ACA2A</generatorID>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F8C7488B-D663-9514-1490-4D433A7F9CA1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

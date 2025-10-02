@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F5845513-ECE7-C547-DBDE-5415C13A9BF6" containerWithKeyObject="30A80DF9-53B5-9D45-0A23-25B0EFA9E520" localFKIndex="C2587B4A-52B3-F2EA-E599-85E4A53912F9" name="TRANSAKSI_PENDUDUK_LUAR_FK">
+<createdBy>AQI</createdBy>
+<createdTime>2025-10-01 13:46:40 UTC</createdTime>
+<generatorID>09A5CFA2-FB66-73D6-17CE-7A28CA98FB4D</generatorID>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<referredTableLongName>PENDUDUK_LUAR</referredTableLongName>
+<arc>A0EAB25E-D3F6-C239-5C48-CFD681EC84F2</arc>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>9560912E-FAC8-F224-7954-A08BA032FD2C</referredTableID>
+<keyObject>7F544759-6D75-9DEE-2838-F9D2021E0F9A</keyObject>
+<referredKeyID>7F544759-6D75-9DEE-2838-F9D2021E0F9A</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>NIK</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="86E0C4A2-2B63-E5FB-0DF9-2F56D5CFD648" name="NOTA">
+<createdBy>AQI</createdBy>
+<createdTime>2025-10-01 14:48:19 UTC</createdTime>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<engineerTo>
+<item key="929452EA-4FE9-7205-F914-C8285FA66F16" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_Transaksi" id="653EA335-63E8-66BF-7EE2-5C49AFF71909">
+<createdBy>AQI</createdBy>
+<createdTime>2025-10-01 14:49:41 UTC</createdTime>
+<generatorID>9076560A-D92A-5200-7563-24ED5457DCDE</generatorID>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<engineerTo>
+<item key="929452EA-4FE9-7205-F914-C8285FA66F16" value="true"/>
+</engineerTo>
+<referedAttribute>8427BBC6-4315-999A-2766-624CF4F57268</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_Produk" id="56F54779-6D1D-9B61-BD60-29FF27ABEFE0">
+<createdBy>AQI</createdBy>
+<createdTime>2025-10-01 14:50:03 UTC</createdTime>
+<generatorID>3B1C1DE8-C68B-3D03-4E36-419971DD68F4</generatorID>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<engineerTo>
+<item key="929452EA-4FE9-7205-F914-C8285FA66F16" value="true"/>
+</engineerTo>
+<referedAttribute>955875BA-EF24-8045-B05B-2AD0A78A5C31</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Jumlah_Pembelian" id="E3272FFD-CB30-30DE-0247-62509E9FB6FB">
+<createdBy>AQI</createdBy>
+<createdTime>2025-10-01 14:50:31 UTC</createdTime>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<engineerTo>
+<item key="929452EA-4FE9-7205-F914-C8285FA66F16" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SubTotal_Harga" id="889436B0-DDD5-E6A5-9FBF-B4D67D324B50">
+<createdBy>AQI</createdBy>
+<createdTime>2025-10-01 14:50:59 UTC</createdTime>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<engineerTo>
+<item key="929452EA-4FE9-7205-F914-C8285FA66F16" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="22E67358-F986-C711-FA72-17211E2B351A" name="NOTA PK">
+<createdBy>AQI</createdBy>
+<createdTime>2025-10-01 14:49:41 UTC</createdTime>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<engineerTo>
+<item key="929452EA-4FE9-7205-F914-C8285FA66F16" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>653EA335-63E8-66BF-7EE2-5C49AFF71909</attributeRef>
+<attributeRef>56F54779-6D1D-9B61-BD60-29FF27ABEFE0</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

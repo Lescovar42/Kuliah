@@ -1,0 +1,113 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D2544F78-5359-8565-EAEA-2ADA0ADF182D" name="KEPEMILIKAN_USAHA">
+<createdBy>AQI</createdBy>
+<createdTime>2025-10-01 13:46:39 UTC</createdTime>
+<generatorID>586A0450-D949-9FD3-15E2-027E14BB5EA1</generatorID>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PENDUDUK_DESA_NIK" id="3C2420A7-4187-619F-DAE8-CD7D2D866F3B">
+<createdBy>AQI</createdBy>
+<createdTime>2025-10-01 13:46:40 UTC</createdTime>
+<generatorID>7E7722C7-7473-8CCB-5C19-CF93B3189089</generatorID>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>16</dataTypeSize>
+<ownDataTypeParameters>16,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6C177BC4-3A1C-68D0-F297-FE6C5D3A4CE3" referredColumn="D6E148CE-F79D-37BA-2998-ECF49D9B5C95"/>
+</associations>
+</Column>
+<Column name="UMKM_ID_UMKM" id="A35573E0-E649-4968-54F7-047E2890A524">
+<createdBy>AQI</createdBy>
+<createdTime>2025-10-01 13:46:40 UTC</createdTime>
+<generatorID>311C6117-0741-9BC6-FB71-710D919937C7</generatorID>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2959F0EE-2CB8-7412-9041-CB1A2349F7DA" referredColumn="083F5D55-584D-D15D-65A9-6805463C2EE0"/>
+</associations>
+</Column>
+<Column name="UMKMv1_ID_UMKM" id="282BE8B3-484A-4A6D-BF3A-0407D1EE0197">
+<createdBy>AQI</createdBy>
+<createdTime>2025-10-01 15:06:56 UTC</createdTime>
+<generatorID>C243FD8A-4B6C-4D39-68DE-3820020F2686</generatorID>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="545E7C78-3EE3-CD1D-1CE3-5C00E73BF870" referredColumn="B3E849D2-6239-88E1-3A1C-70DBD0617CA3"/>
+</associations>
+</Column>
+<Column name="ID_Kepemilikan" id="53BFB49C-ED82-8036-7701-5A63DB76D68D">
+<createdBy>AQI</createdBy>
+<createdTime>2025-10-01 15:06:56 UTC</createdTime>
+<generatorID>C1B3B9B2-BA59-912F-A7C5-E332CB42798C</generatorID>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="62D0E4D3-D82A-50CA-A59C-BACD6289747C" name="KEPEMILIKAN_USAHA_PK">
+<createdBy>AQI</createdBy>
+<createdTime>2025-10-01 13:46:40 UTC</createdTime>
+<generatorID>4A7C7275-CCE7-7503-0CFC-14AB6DCF538B</generatorID>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="53BFB49C-ED82-8036-7701-5A63DB76D68D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B9518D0D-DA35-50DD-BE98-C66806E2A986" name="KEPEMILIKAN_USAHA_PENDUDUK_DESA_FK">
+<createdBy>AQI</createdBy>
+<createdTime>2025-10-01 13:46:40 UTC</createdTime>
+<generatorID>3CFFD070-A404-E74B-3FB1-992CE1BB79C6</generatorID>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3C2420A7-4187-619F-DAE8-CD7D2D866F3B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="209A84F4-BCF1-EFF4-5F39-2D95E8353D85" name="KEPEMILIKAN_USAHA_UMKM_FK">
+<createdBy>AQI</createdBy>
+<createdTime>2025-10-01 13:46:40 UTC</createdTime>
+<generatorID>06495412-4C8C-7A34-6311-D4A3F22A816C</generatorID>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A35573E0-E649-4968-54F7-047E2890A524"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E630343B-59F9-5D43-6DD0-112CADCF3C43" name="KEPEMILIKAN_USAHA_UMKMv1_FK">
+<createdBy>AQI</createdBy>
+<createdTime>2025-10-01 15:06:56 UTC</createdTime>
+<generatorID>7407F400-08F7-FAA1-70F8-139197DC68DA</generatorID>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="282BE8B3-484A-4A6D-BF3A-0407D1EE0197"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

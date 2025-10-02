@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_16" directorySegmentName="seg_0" id="7407F400-08F7-FAA1-70F8-139197DC68DA">
+<createdBy>AQI</createdBy>
+<createdTime>2025-10-01 13:55:04 UTC</createdTime>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<engineerTo>
+<item key="929452EA-4FE9-7205-F914-C8285FA66F16" value="true"/>
+</engineerTo>
+<sourcePk>D8153C20-2AE2-3725-0823-06DBE39BAC4B</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>588DA0A0-9644-D1D4-01D0-97421A978FF7</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>586A0450-D949-9FD3-15E2-027E14BB5EA1</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

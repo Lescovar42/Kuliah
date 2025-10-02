@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E30C4DC8-2AC5-ED72-F5D0-499C0A8FCDDD" containerWithKeyObject="838937EB-54B8-CF8F-CE48-CE8EFC330DDD" localFKIndex="DECCDD7F-0B8C-8C37-BF07-7C08BE1F8A79" name="Relation_16_TRANSAKSI_FK">
+<createdBy>AQI</createdBy>
+<createdTime>2025-09-29 07:27:20 UTC</createdTime>
+<generatorID>049E839C-E6F5-62C1-A1A2-2CD66DA918B6</generatorID>
+<ownerDesignName>UMKM 2</ownerDesignName>
+<referredTableLongName>TRANSAKSI</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>30A80DF9-53B5-9D45-0A23-25B0EFA9E520</referredTableID>
+<keyObject>47B4AFA1-A101-0062-D810-39186D883DCD</keyObject>
+<referredKeyID>47B4AFA1-A101-0062-D810-39186D883DCD</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_Transaksi</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

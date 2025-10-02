@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKArc class="oracle.dbtools.crest.model.design.relational.FKArc" directorySegmentName="seg_0" id="D94D3E6E-E9A4-8346-5453-07746FB333FD" name="FKArc_1">
+<createdBy>AQI</createdBy>
+<createdTime>2025-09-29 07:27:20 UTC</createdTime>
+<ownerDesignName>Umkm project</ownerDesignName>
+<mandatory>false</mandatory>
+<reverseArc>true</reverseArc>
+<table>3D8FA9F6-B1BD-C494-809E-5F91F1B7F674</table>
+<fkeys>
+<fkeyID>B60D86FD-B51F-4965-504B-13D054251AAA</fkeyID>
+<fkeyID>0A138AD8-B416-B0BF-00B8-B657DF025F8E</fkeyID>
+<fkeyID>F8B5DB04-D085-37BC-9147-19600854F813</fkeyID>
+<fkeyID>7F02C002-5DCD-406B-A91E-FD22DD260F21</fkeyID>
+</fkeys>
+</FKArc>
