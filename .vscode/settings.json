@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "boolean.h": "c",
-        "tqueue.h": "c"
+        "tqueue.h": "c",
+        "functional": "cpp"
     }
 }
