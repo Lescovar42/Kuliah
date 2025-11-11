@@ -4,6 +4,7 @@
 /* Tanggal : 6 November 2025 */
 #include <stdio.h>
 #include <stdlib.h>
+#include "boolean.h"
 #include "list1.h"
 
 /********* manajemen memori ********/
@@ -158,6 +159,24 @@ void DeleteVLast(List1 *L, infotype *V) {
 	address P;
 	address Q;
 	// Algoritma
+	if (!IsEmptyList(*L)) {
+		if (next(First(*L)) == NIL) {
+			P = First (*L);
+			*V = info(P);
+			First(*L) = NIL;
+			Dealokasi(P);
+		} 
+		else {
+			Q = First(*L);
+			while (next(next(Q)) != NIL) {
+				Q = next(Q);
+			}
+			P = next(Q);
+			*V = info(P);
+			next(Q) = NIL;
+			Dealokasi(P);
+		}
+	}
 }
 
 /*** PENCARIAN ***/
@@ -165,74 +184,290 @@ void DeleteVLast(List1 *L, infotype *V) {
 { I.S. L, X terdefinisi }
 { F.S. A berisi alamat elemen yang nilainya X.
 Proses: Mencari apakah ada elemen list dengan info(P)= X. Jika ada, mengisi A dengan address elemen tersebut. Jika tidak ada, A=Nil }*/
-void SearchX(List1 L, infotype X, address A);
+void SearchX(List1 L, infotype X, address *A) {
+	// Kamus Lokal
+	address P;
+	// Algoritma
+	P = First(L);
+	*A = NIL;
+	while (P != NIL) {
+		if (info(P) == X) {
+			*A = P;
+			break;
+		}
+		P = next(P);
+	}
+}
 
 /*** MANIPULASI ELEMEN LIST ***/
 /*Procedure UpdateX(input/output L:List1, input X:infotype, input Y:infotype)
 { I.S. L, X, Y terdefinisi }
 { F.S. L tetap, atau elemen bernilai X berubah menjadi Y.
 Proses: Mengganti elemen bernilai X menjadi Y}*/
-void UpdateX(List1 *L, infotype X, infotype Y);
+void UpdateX(List1 *L, infotype X, infotype Y) {
+	// Kamus Lokal
+	address P;
+	// Algoritma
+	P = First(*L);
+	while (P != NIL) {
+		if (info(P) == X) {
+			info(P) = Y;
+			break;
+		}
+		P = next(P);
+	}
+}
 
 /*Procedure Invers(input/output L:List1)
 { I.S. L terdefinisi }
 { F.S. urutan posisi elemen terbalik, misal {'i','t','u'} menjadi {'u','t','i'} }*/
-void Invers(List1 *L);
+void Invers(List1 *L) {
+	// Kamus Lokal
+	address Prev;
+	address Curr;
+	address Next;
+	// Algoritma
+	Prev = NIL;
+	Curr = First(*L);
+	while (Curr != NIL) {
+		Next = next(Curr);
+		next(Curr) = Prev;
+		Prev = Curr;
+		Curr = Next;
+	}
+}
 
 /*********** SOAL TAMBAHAN, DIKERJAKAN BILA LUANG *****************/
 /*function CountVocal(L:List1, X:infotype) -> integer */
 /*{ mengembalikan banyaknya kemunculan huruf vokal dalam list L}*/
-int CountVocal(List1 L, infotype X);
+int CountVocal(List1 L, infotype X) {
+	// Kamus Lokal
+	address P;
+	int count;
+	// Algoritma
+	count = 0;
+	P = First(L);
+	while (P != NIL) {
+		if (info(P) == 'A' || info(P) == 'I' || info(P) == 'U' || info(P) == 'E' || info(P) == 'O' ||
+		    info(P) == 'a' || info(P) == 'i' || info(P) == 'u' || info(P) == 'e' || info(P) == 'o') {
+			count++;
+		}
+		P = next(P);
+	}
+	return count;
+}
 
 /*function CountX(L:List1, X:infotype) -> integer */
 /*{ mengembalikan banyaknya kemunculan X dalam list L}*/
-int CountX(List1 L, infotype X);
+int CountX(List1 L, infotype X) {
+	// Kamus Lokal
+	address P;
+	int count;
+	// Algoritma
+	count = 0;
+	P = First(L);
+	while (P != NIL) {
+		if (info(P) == X) {
+			count++;
+		}
+		P = next(P);
+	}
+	return count;
+}
 
 /*function FrekuensiX(L:List1, X:infotype) -> real */
 /*{ mengembalikan rasio kemunculan X dibandingkan ukuran list L }*/
-float FrekuensiX(List1 L, infotype X);
+float FrekuensiX(List1 L, infotype X) {
+	// Kamus Lokal
+	int countX;
+	int totalElm;
+	float frequency;
+	// Algoritma
+	countX = CountX(L, X);
+	totalElm = NbElm(L);
+	if (totalElm == 0) {
+		frequency = 0.0;
+	} else {
+		frequency = (float)countX / totalElm;
+	}
+	return frequency;
+}
 
 /*Procedure SearchAllX(input L:List1, input X:infotype)
 { I.S. L, X terdefinisi }
 { F.S. -
 Proses: menampilkan posisi-posisi (1,2,3,...nbElm(L)) kemunculan elemen X dalam list L }*/
-void SearchAllX(List1 L, infotype X);
+void SearchAllX(List1 L, infotype X) {
+	// Kamus Lokal
+	address P;
+	int position;
+	// Algoritma
+	P = First(L);
+	position = 1;
+	printf("Posisi kemunculan elemen '%c': ", X);
+	while (P != NIL) {
+		if (info(P) == X) {
+			printf("%d ", position);
+		}
+		P = next(P);
+		position++;
+	}
+	printf("\n");
+}
 
 /*Procedure UpdateAllX(input/output L:List1, input X:infotype, input Y:infotype)
 { I.S. L, X, Y terdefinisi }
 { F.S. L tetap, atau semua elemen bernilai X berubah menjadi Y. 
 Proses : mengganti semua elemen bernilai X menjadi Y}*/
-void UpdateAllX(List1 *L, infotype X, infotype Y);
+void UpdateAllX(List1 *L, infotype X, infotype Y) {
+	// Kamus Lokal
+	address P;
+	// Algoritma
+	P = First(*L);
+	while (P != NIL) {
+		if (info(P) == X) {
+			info(P) = Y;
+		}
+		P = next(P);
+	}
+}
 
 /* Procedure InsertVAfter(input/output L:List1, input V:infotype, input VA:infotype )
 { I.S. List L mungkin kosong, V, S terdefinisi }
 { F.S. L tetap, atau bertambah 1 elemen (VA) pada posisi setelah elemen berinfo V}
 { Proses: Insert sebuah elemen beralamat P dengan Info(P)=VA sebagai elemen setelah elemen V list linier L yg mungkin kosong } */
-void InsertVAfter(List1 *L, infotype V, infotype VA );
+void InsertVAfter(List1 *L, infotype V, infotype VA ) {
+	//kamus lokal
+	address P;
+	address Q;
+	//algoritma
+	Q = First(*L);
+	while (Q != NIL && info(Q) != V) {
+		Q = next(Q);
+	}
+	if (Q != NIL) {
+		P = Alokasi(VA);
+		if (P != NIL) { //alokasi berhasil
+			next(P) = next(Q);
+			next(Q) = P;
+		}
+	}
+}
 
 /*function Modus(L:List1) -> infotype */
-/*{ mengembalikan huruf yang paling banyak muncul dalam list L}*/
-infotype Modus(List1 L);
+/*{ mengembalikan huruf yang paling banyak muncul dalam list L. Tanpa menggunakan null char}*/
+infotype Modus(List1 L) {
+	// Kamus Lokal
+	address P;
+	address Q;
+	infotype modus;
+	int maxCount;
+	int currentCount;
+	boolean sudahDihitung;
+	// Algoritma
+	modus = info(First(L));
+	maxCount = 0;
+
+	P = First(L);
+	while (P != NIL) {
+		sudahDihitung = false;
+		Q = First(L);
+		while (Q != P) {
+			if (info(Q) == info(P)) {
+				sudahDihitung = true;
+				break;
+			}
+			Q = next(Q);
+		}
+		if (!sudahDihitung) {
+			currentCount = CountX(L, info(P));
+			if (currentCount > maxCount) {
+				maxCount = currentCount;
+				modus = info(P);
+			}
+		}
+
+		P = next(P);
+	}
+
+	return modus;
+}
 
 /*function NbModus(L:List1) -> integer */
 /*{ mengembalikan banyaknya huruf yang paling banyak muncul di list L}*/
-int NbModus(List1 L);
+int NbModus(List1 L) {
+	// Kamus Lokal
+	infotype modusChar;
+	int count;
+	// Algoritma
+	if (IsEmptyList(L)) {
+		return 0;
+	}
+	modusChar = Modus(L);
+	count = CountX(L, modusChar);
+	return count;
+}
 
 /*OPERASI BANYAK LIST*/
 /*Procedure ConcatList(input L1:List1, input L2:List1, output L:List1)
 {I.S.: L1,L2 terdefinisi ; 
  F.S.: L gabungan L1 dan L2}*/
-void ConcatList(List1 L1, List1 L2, List1 *L); 
+void ConcatList(List1 L1, List1 L2, List1 *L) {
+	// Kamus Lokal
+	address P;
+	// Algoritma
+	CreateList(L);
+		P = First(L1);
+	while (P != NIL) {
+		InsertVLast(L, info(P));
+		P = next(P);
+	}
+		P = First(L2);
+	while (P != NIL) {
+		InsertVLast(L, info(P));
+		P = next(P);
+	}
+}
 
 /*Procedure SplitList(input L:List1, output L1:List1, output L2:List1)
 {I.S.: L terdefinisi ; 
  F.S.: L1, L2 hasil pemecahan L}*/
-void SplitList(List1 L, List1 *L1, List1 *L2);
+void SplitList(List1 L, List1 *L1, List1 *L2) {
+	// Kamus Lokal
+	address P;
+	int mid;
+	int count;
+	// Algoritma
+	CreateList(L1);
+	CreateList(L2);
+	mid = NbElm(L) / 2;
+	count = 0;
+	P = First(L);
+	while (P != NIL) {
+		if (count < mid) {
+			InsertVLast(L1, info(P));
+		} else {
+			InsertVLast(L2, info(P));
+		}
+		count++;
+		P = next(P);
+	}
+}
 
 /*Procedure CopyList(input L1:List1, output L2:List1)
 {I.S.: L1 terdefinisi;  
  F.S.: L2 menjadi salinan L1}*/
-void CopyList(List1 L1, List1 *L2);
+void CopyList(List1 L1, List1 *L2) {
+	// Kamus Lokal
+	address P;
+	// Algoritma
+	CreateList(L2);
+	P = First(L1);
+	while (P != NIL) {
+		InsertVLast(L2, info(P));
+		P = next(P);
+	}
+}
 
 
 // //kamus
