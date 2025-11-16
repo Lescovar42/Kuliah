@@ -269,13 +269,48 @@ void SearchX(List2 L, infotype X, address *A) {
 { I.S. L, X, Y terdefinisi }
 { F.S. L tetap, atau elemen bernilai X berubah menjadi Y.
 Mengganti elemen bernilai X menjadi bernilai Y}*/
-void UpdateX(List2 *L, infotype X, infotype Y);
+void UpdateX(List2 *L, infotype X, infotype Y)
+{
+    // Kamus Lokal
+    address P;
+    // Algoritma
+    P = First(*L);
+    if (P != NIL) {
+        do {
+            if (info(P) == X) {
+                info(P) = Y;
+                break;
+            }
+            P = next(P);
+        } while (P != First(*L));
+    }
+}
 
 /*Procedure Invers(input/output L:List2)
 { I.S. L terdefinisi }
 { F.S. urutan posisi elemen terbalik, 
 misal {'A','B','C'} menjadi {'C','B','A'} }*/
-void Invers(List2 *L);
+void Invers(List2 *L) {
+    // Kamus Lokal
+    address prev, curr, nextNode, firstNode;
+    // Algoritma
+    if (!IsEmptyList(*L) && !IsOneElm(*L)) {
+        firstNode = First(*L);
+        prev = First(*L);
+        curr = next(First(*L));
+        nextNode = next(curr);
+        do {
+            next(curr) = prev;
+            prev = curr;
+            curr = nextNode;
+            if (nextNode != firstNode) {
+                nextNode = next(nextNode);
+            }
+        } while (curr != firstNode);
+        next(firstNode) = prev;
+        First(*L) = prev;
+    }
+}
 
 /*********** SOAL TAMBAHAN, DIKERJAKAN BILA LUANG *****************/
 
