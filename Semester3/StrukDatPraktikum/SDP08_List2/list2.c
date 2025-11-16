@@ -586,18 +586,19 @@ char Modus(List2 L) {
     int max, count;
     char modus;
     // Algoritma
-    max = 0;
-    modus = '\0';
-    if (!IsEmptyList(L)) {
-        P = First(L);
-        do {
-            count = CountX(L, info(P));
-            if (count > max) {
-                max = count;
-                modus = info(P);
-            }
-            P = next(P);
-        } while (P != First(L));
+    if (IsEmptyList(L)) {
+        return '#';
+    }
+    modus = info(First(L));
+    max = CountX(L, modus);
+    P = next(First(L));
+    while (P != First(L)) {
+        count = CountX(L, info(P));
+        if (count > max) {
+            max = count;
+            modus = info(P);
+        }
+        P = next(P);
     }
     return modus;
 }
