@@ -214,5 +214,189 @@ int main() {
     } else {
         printf("Elemen 'X' tidak ditemukan.\n");
     }
+
+    // 15. Test DeleteX
+    printf("\n15. TEST DELETE X\n");
+    printf("Isi list sebelum DeleteX('X'): ");
+    PrintList(L);
+    printf("Menghapus satu elemen 'X'...\n");
+    DeleteX(&L, 'X');
+    printf("Isi list setelah DeleteX: ");
+    PrintList(L);
+    printf("Jumlah elemen: %d\n", NbElm(L));
+
+    // 16. Test UpdateX
+    printf("\n16. TEST UPDATE X\n");
+    printf("Isi list saat ini: ");
+    PrintList(L);
+    printf("Mengubah elemen 'Y' menjadi 'W'...\n");
+    UpdateX(&L, 'Y', 'W');
+    printf("Isi list setelah UpdateX: ");
+    PrintList(L);
+
+    // 17. Test Invers
+    printf("\n17. TEST INVERS\n");
+    printf("Isi list sebelum Invers: ");
+    PrintList(L);
+    Invers(&L);
+    printf("Isi list setelah Invers: ");
+    PrintList(L);
+
+    // 18. Test CountX dan FrekuensiX
+    printf("\n18. TEST COUNT X DAN FREKUENSI X\n");
+    printf("Isi list: ");
+    PrintList(L);
+    int countP = CountX(L, 'P');
+    int countX = CountX(L, 'X');
+    printf("Jumlah kemunculan 'P': %d\n", countP);
+    printf("Jumlah kemunculan 'X': %d\n", countX);
+    printf("Frekuensi 'P': %.2f\n", FrekuensiX(L, 'P'));
+    printf("Frekuensi 'X': %.2f\n", FrekuensiX(L, 'X'));
+
+    // 19. Test CountVocal dan CountNG
+    printf("\n19. TEST COUNT VOCAL DAN COUNT NG\n");
+    List2 L4;
+    CreateList(&L4);
+    InsertVLast(&L4, 'B');
+    InsertVLast(&L4, 'A');
+    InsertVLast(&L4, 'N');
+    InsertVLast(&L4, 'G');
+    InsertVLast(&L4, 'U');
+    InsertVLast(&L4, 'N');
+    printf("Isi list: ");
+    PrintList(L4);
+    printf("Jumlah huruf vokal: %d\n", CountVocal(L4));
+    printf("Jumlah 'NG': %d\n", CountNG(L4));
+
+    // 20. Test InsertVAfterX dan InsertVBeforeX
+    printf("\n20. TEST INSERT V AFTER X DAN INSERT V BEFORE X\n");
+    printf("Isi list sebelum insert: ");
+    PrintList(L4);
+    printf("Insert 'M' setelah 'N'...\n");
+    InsertVAfterX(&L4, 'N', 'M');
+    printf("Isi list: ");
+    PrintList(L4);
+    printf("Insert 'K' sebelum 'G'...\n");
+    InsertVBeforeX(&L4, 'G', 'K');
+    printf("Isi list: ");
+    PrintList(L4);
+    printf("Jumlah elemen: %d\n", NbElm(L4));
+
+    // 21. Test DeleteVAfterX dan DeleteVBeforeX
+    printf("\n21. TEST DELETE V AFTER X DAN DELETE V BEFORE X\n");
+    printf("Isi list sebelum delete: ");
+    PrintList(L4);
+    DeleteVAfterX(&L4, 'N', &val);
+    printf("Delete elemen setelah 'N', elemen yang dihapus: %c\n", val);
+    printf("Isi list: ");
+    PrintList(L4);
+    DeleteVBeforeX(&L4, 'G', &val);
+    printf("Delete elemen sebelum 'G', elemen yang dihapus: %c\n", val);
+    printf("Isi list: ");
+    PrintList(L4);
+    printf("Jumlah elemen: %d\n", NbElm(L4));
+
+    // 22. Test DeleteAllX
+    printf("\n22. TEST DELETE ALL X\n");
+    List2 L5;
+    CreateList(&L5);
+    InsertVLast(&L5, 'A');
+    InsertVLast(&L5, 'B');
+    InsertVLast(&L5, 'A');
+    InsertVLast(&L5, 'C');
+    InsertVLast(&L5, 'A');
+    printf("Isi list sebelum DeleteAllX('A'): ");
+    PrintList(L5);
+    printf("Menghapus semua elemen 'A'...\n");
+    DeleteAllX(&L5, 'A');
+    printf("Isi list setelah DeleteAllX: ");
+    PrintList(L5);
+    printf("Jumlah elemen: %d\n", NbElm(L5));
+
+    // 23. Test SearchAllX
+    printf("\n23. TEST SEARCH ALL X\n");
+    List2 L6;
+    CreateList(&L6);
+    InsertVLast(&L6, 'M');
+    InsertVLast(&L6, 'A');
+    InsertVLast(&L6, 'N');
+    InsertVLast(&L6, 'D');
+    InsertVLast(&L6, 'A');
+    printf("Isi list: ");
+    PrintList(L6);
+    printf("Posisi kemunculan 'A': ");
+    SearchAllX(L6, 'A');
+    printf("\nPosisi kemunculan 'M': ");
+    SearchAllX(L6, 'M');
+    printf("\nPosisi kemunculan 'J': ");
+    SearchAllX(L6, 'J');
+    printf("\n");
+
+    // 24. Test MaxMember dan Modus
+    printf("\n24. TEST MAX MEMBER DAN MODUS\n");
+    printf("Isi list: ");
+    PrintList(L6);
+    printf("Jumlah huruf yang paling banyak muncul: %d\n", MaxMember(L6));
+    printf("Huruf yang paling banyak muncul (modus): %c\n", Modus(L6));
+
+    // 25. Test ConcatList
+    printf("\n25. TEST CONCAT LIST\n");
+    List2 L7, L8, L9;
+    CreateList(&L7);
+    CreateList(&L8);
+    InsertVLast(&L7, 'A');
+    InsertVLast(&L7, 'B');
+    InsertVLast(&L7, 'C');
+    InsertVLast(&L8, 'X');
+    InsertVLast(&L8, 'Y');
+    InsertVLast(&L8, 'Z');
+    printf("List L7: ");
+    PrintList(L7);
+    printf("List L8: ");
+    PrintList(L8);
+    ConcatList(L7, L8, &L9);
+    printf("List L9 (hasil concat L7 dan L8): ");
+    PrintList(L9);
+    printf("Jumlah elemen L9: %d\n", NbElm(L9));
+
+    // 26. Test SplitList
+    printf("\n26. TEST SPLIT LIST\n");
+    List2 L10, L11, L12;
+    CreateList(&L10);
+    InsertVLast(&L10, 'A');
+    InsertVLast(&L10, 'B');
+    InsertVLast(&L10, 'C');
+    InsertVLast(&L10, 'D');
+    InsertVLast(&L10, 'E');
+    printf("List L10 sebelum split: ");
+    PrintList(L10);
+    SplitList(L10, &L11, &L12);
+    printf("List L11 (hasil split pertama): ");
+    PrintList(L11);
+    printf("Jumlah elemen L11: %d\n", NbElm(L11));
+    printf("List L12 (hasil split kedua): ");
+    PrintList(L12);
+    printf("Jumlah elemen L12: %d\n", NbElm(L12));
+
+    // 27. Test CopyList
+    printf("\n27. TEST COPY LIST\n");
+    List2 L13, L14;
+    CreateList(&L13);
+    InsertVLast(&L13, 'P');
+    InsertVLast(&L13, 'Q');
+    InsertVLast(&L13, 'R');
+    printf("List L13 (original): ");
+    PrintList(L13);
+    CopyList(L13, &L14);
+    printf("List L14 (copy dari L13): ");
+    PrintList(L14);
+    printf("Apakah L13 dan L14 sama? ");
+    if (NbElm(L13) == NbElm(L14)) {
+        printf("Ya (jumlah elemen sama: %d)\n", NbElm(L13));
+    } else {
+        printf("Tidak\n");
+    }
+
+    printf("\n=== SEMUA TEST SELESAI ===\n");
     return 0;
 }
