@@ -17,7 +17,9 @@ int main()
 	viewStack(A);
 	printStack(A);
 	push(&A,'A');
+	printStack(A);
 	push(&A,'B');
+	printStack(A);
 	push(&A,'C');
 	printStack(A);
 	char x;
