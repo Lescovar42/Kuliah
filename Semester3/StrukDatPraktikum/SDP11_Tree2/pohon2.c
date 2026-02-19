@@ -259,14 +259,69 @@ infotype minTree(bintree P) {
 
 /*function BSearch (P : BinTree, X : infotype) → boolean
 { Mengirimkan true jika ada node dari pohon binary search P yang bernilai X }*/
-boolean BSearch(bintree P, infotype X);
+boolean BSearch(bintree P, infotype X) {
+    /* Kamus Lokal */
+
+    /* Algoritma */
+    if (P == NIL) {
+        return false;
+    } else {
+        if (info(P) == X) {
+            return true;
+        } else if (X < info(P)) {
+            return BSearch(left(P), X);
+        } else {
+            return BSearch(right(P), X);
+        }
+    }
+}
 
 /*function InsSearch (P : BinTree, X : infotype) → BinTree
 { Menghasilkan sebuah pohon Binary Search Tree P dengan tambahan simpul X. Belum ada simpul P yang bernilai X. }*/
-bintree InsSearch(bintree P, infotype X);
+bintree InsSearch(bintree P, infotype X) {
+    /* Kamus Lokal */
+    bintree NewNode;
+
+    /* Algoritma */
+    if (P == NIL) {
+        NewNode = AlokasiTree(X);
+        return NewNode;
+    } else {
+        if (X < info(P)) {
+            left(P) = InsSearch(left(P), X);
+        } else {
+            right(P) = InsSearch(right(P), X);
+        }
+        return P;
+    }
+}
 
 /*procedure DelBtree (input/output P : BinTree, input X : infotype)
 { I.S. Pohon binary search P tidak kosong }
 { F.S. Nilai X yang dihapus pasti ada }
 { Sebuah node dg nilai X dihapus }*/
-void DelBtree(bintree *P, infotype X);
+void DelBtree(bintree *P, infotype X) {
+    if (*P != NIL) {
+        if (info(*P) == X) {
+            if (IsDaun(*P)) {
+                DealokasiTree(P);
+            } else if (IsUnerLeft(*P)) {
+                bintree temp = *P;
+                *P = left(*P);
+                DealokasiTree(&temp);
+            } else if (IsUnerRight(*P)) {
+                bintree temp = *P;
+                *P = right(*P);
+                DealokasiTree(&temp);
+            } else {
+                infotype minRight = GetDaunTerkiri(right(*P));
+                info(*P) = minRight;
+                DelBtree(&right(*P), minRight);
+            }
+        } else if (X < info(*P)) {
+            DelBtree(&left(*P), X);
+        } else {
+            DelBtree(&right(*P), X);
+        }
+    }
+}

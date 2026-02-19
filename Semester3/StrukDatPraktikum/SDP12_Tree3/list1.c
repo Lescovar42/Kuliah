@@ -1,10 +1,9 @@
 /* File : list1.c */
 /* Deskripsi : realisasi body ADT list berkait representasi fisik pointer */
 /* NIM & Nama : 24060124140166/Muhammad Farhan Abdul Azis*/
-/* Tanggal : 6 November 2025 */
+/* Tanggal : 11 Desember 2025 */
 #include <stdio.h>
 #include <stdlib.h>
-#include "boolean.h"
 #include "list1.h"
 
 /********* manajemen memori ********/

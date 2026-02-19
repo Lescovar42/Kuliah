@@ -6,7 +6,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "list1.h"
-#include "list1.c"
 int main()
 { //kamus
   address A; 
@@ -62,6 +61,7 @@ int main()
   printf("\n\n4. InsertVLast");
   InsertVLast(&L1, 'X');
   printf("\n   Insert 'X' di akhir");
+  PrintList(L1);
   InsertVLast(&L1, 'Y');
   printf("\n   Insert 'Y' di akhir");
   PrintList(L1);
